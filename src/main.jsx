@@ -1,5 +1,5 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import CounterApp from "./CounterApp/index.jsx";
@@ -14,7 +14,6 @@ import TaskManager from "./TaskManager/index.jsx";
 import TicTac from "./TicTac/index.jsx";
 import InfiniteScrolling from "./InfiniteScrolling/index.jsx";
 import JobBoard from "./JobBoard/index.jsx";
-import { BrowserRouter } from "react-router-dom";
 import SelectableGrid from "./SelectableGrid/index.jsx";
 import Debounce from "./Debounce/index.jsx";
 import FilterProduct from "./FilterProduct/index.jsx";
@@ -26,8 +25,11 @@ import NestedCheck from "./NestedCheck/index.jsx";
 import InputChip from "./ChipInput/index.jsx";
 import LeapYear from "./LeapYear/index.jsx";
 import ClipBoard from "./ClipBoard/index.jsx";
+import LargestNumberFormed from "./LargestNoFormed/index.jsx";
+import CustomSort from "./CustomSort/index.jsx";
+import Fibn from "./FibnacoSeries/index.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <ClipBoard />
+    <Fibn />
   </BrowserRouter>
 );
