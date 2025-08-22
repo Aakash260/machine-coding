@@ -28,8 +28,16 @@ import ClipBoard from "./ClipBoard/index.jsx";
 import LargestNumberFormed from "./LargestNoFormed/index.jsx";
 import CustomSort from "./CustomSort/index.jsx";
 import Fibn from "./FibnacoSeries/index.jsx";
+import RedoUndo from "./UndoRedo/index.jsx";
+import DotRedo from "./DotsRedo/index.jsx";
+import PasswordGenerator from "./GeneratePassword/index.jsx";
+import Mcq from "./Mcq/index.jsx";
+import TrafficLight from "./TrafficLight/index.jsx";
+import PinItems from "./PinnedItem/index.jsx";
+import GridLights from "./GeidLight/index.jsx";
+import BishopMove from "./Bishop/index.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Fibn />
+    <BishopMove />
   </BrowserRouter>
 );
