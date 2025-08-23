@@ -36,8 +36,11 @@ import TrafficLight from "./TrafficLight/index.jsx";
 import PinItems from "./PinnedItem/index.jsx";
 import GridLights from "./GeidLight/index.jsx";
 import BishopMove from "./Bishop/index.jsx";
+import Cinema from "./CineamSeat/index.jsx";
+import ExpenseTracker from "./ExpenseTracker/index.jsx";
+import MultiSelectDropdown from "./MultipleDrop/index.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <BishopMove />
+    <MultiSelectDropdown />
   </BrowserRouter>
 );
