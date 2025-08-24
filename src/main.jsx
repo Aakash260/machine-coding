@@ -39,8 +39,11 @@ import BishopMove from "./Bishop/index.jsx";
 import Cinema from "./CineamSeat/index.jsx";
 import ExpenseTracker from "./ExpenseTracker/index.jsx";
 import MultiSelectDropdown from "./MultipleDrop/index.jsx";
+import Toast from "./Toast/index.js";
+import TablePag from "./PaginationTable/index.js";
+import StickyNotesApp from "./StickeyNote/StickyNote.js";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <MultiSelectDropdown />
+    <StickyNotesApp />
   </BrowserRouter>
 );
