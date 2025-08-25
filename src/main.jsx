@@ -44,6 +44,6 @@ import TablePag from "./PaginationTable/index.js";
 import StickyNotesApp from "./StickeyNote/StickyNote.js";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <StickyNotesApp />
+    <CounterApp />
   </BrowserRouter>
 );
