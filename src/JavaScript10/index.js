@@ -1,22 +1,15 @@
 // Most Asked 10 Interview Question
 
-// Q1 Reverse String
+const str = "CanYouReverserMe";
 
-// const str = "CanYouReverserMe";
-//way 1:
-// console.log(str.split("").reverse().join(""));
-
-// way 2:
-// let rev = "";
-// for (let i = 0; i < str.length; i++) {
-//   rev = str[i] + rev;
-// }
-
-// Q2 target sum
+console.log(str.split("").reverse().join(""));
+let rev = "";
+for (let i = 0; i < str.length; i++) {
+  rev = str[i] + rev;
+}
 
 // const arr = [1, 3, 4, 5, 2];
 
-// way 1
 // function TargeySum(arr, target) {
 //   for (let i = 0; i < arr.length; i++) {
 //     for (let j = 0; j < arr.length; j++) {
@@ -27,33 +20,32 @@
 //   }
 // }
 
-//way 2
-// function TargeySum(arr, target) {
-//   let map = new Map();
-//   for (let i = 0; i < arr.length; i++) {
-//     let compare = target - arr[i];
-//     if (map.has(compare)) {
-//       return [compare, arr[i]];
-//     }
-//     map.set(arr[i], i);
-//   }
-// }
+function TargeySum(arr, target) {
+  let map = new Map();
+  for (let i = 0; i < arr.length; i++) {
+    let compare = target - arr[i];
+    if (map.has(compare)) {
+      return [compare, arr[i]];
+    }
+    map.set(arr[i], i);
+  }
+}
 // console.log(TargeySum(arr, 6));
 
 //Q3 reverse no and tell is it palindrom
 
-// function reverseAndPalindrom(no) {
-//   let temp = no;
-//   let rev = 0;
-//   while (temp != 0) {
-//     let digit = temp % 10;
-//     rev = rev * 10 + digit;
-//     temp = Math.floor(temp / 10);
-//   }
-//   return rev === no;
-// }
+function reverseAndPalindrom(no) {
+  let temp = no;
+  let rev = 0;
+  while (temp != 0) {
+    let digit = temp % 10;
+    rev = rev * 10 + digit;
+    temp = Math.floor(temp / 10);
+  }
+  return rev === no;
+}
 
-// console.log(reverseAndPalindrom(123));
+console.log(reverseAndPalindrom(123));
 
 // Q4 longestConsecutive
 
